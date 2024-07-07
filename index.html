@@ -3,15 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOP | Sign-Up Form</title>
+    <title>TOP - Sign Up Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="images/bg.jpg" alt="" />
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="image">
+      <img src="image/synth.jpg" alt="background image" />
+      <div class="overlay"></div>
+      <div class="overlayText">
+        <img src="image/odin-lined.png" alt="logo" />
+        <h1>ODIN</h1>
+      </div>
+      <p id="photoCredit">
+        Photo by
+        <a href="https://unsplash.com/@nsx_2000">Krzysztof Hepner</a> on
+        <a href="http://unsplash.com/">Unsplash</a>
+      </p>
+    </div>
+    <div class="content">
+      <div class="quote">
+        <p class="quoteText">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />Sign
+          up <i>now</i> to get started.
+        </p>
+        <p class="quoteText">You <i>know</i> you want to.</p>
+      </div>
+      <div class="card marginText">
+        <p id="letsDothis">Let's do this!</p>
+        <form action="https://httpbin.org/" method="post">
+          <div class="leftSide">
+            <label for="firstName" class="formElement">First Name</label> <br />
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              required
+              class="formElement"
+            />
+            <br /><br />
+            <label for="email" class="formElement">Email</label> <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="formElement"
+            />
+            <br /><br />
+            <label for="pwd" class="formElement">Password</label> <br />
+            <input
+              type="password"
+              name="pwd"
+              id="pwd"
+              required
+              class="formElement"
+            />
+            <br /><br />
+            <p id="pwdNotMatch" class="formElement">*Passwords do not match</p>
+            <br />
+          </div>
+          <div class="rightSide">
+            <label for="lastName" class="formElement">Last Name</label> <br />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              required
+              class="formElement"
+            />
+            <br /><br />
+            <label for="phoneNumber" class="formElement">Phone Number</label>
+            <br />
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumber"
+              required
+              class="formElement"
+            />
+            <br /><br />
+            <label for="confirmPwd" class="formElement">Confirm Password</label>
+            <br />
+            <input
+              type="password"
+              name="confirmPwd"
+              id="confirmPwd"
+              required
+              class="formElement"
+            />
+            <br />
+          </div>
+        </form>
+      </div>
+      <button type="button">Create Account</button>
+      <p class="marginText footer">
+        Already have an account? <a href="http://google.com">Log in</a>
+      </p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
